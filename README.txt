@@ -27,13 +27,13 @@ https://www.mono-project.com/download/stable/
 CHOCOLATEY:
 choco install mono
 
-Após instalar, ele irá criar um atalho no menu iniciar. Em seguida, é necessário abrir esse CMD e navegar até a pasta do desafio.
+# Após instalar, ele irá criar um atalho no menu iniciar. Em seguida, é necessário abrir esse CMD e navegar até a pasta do desafio.
 
-Ao navegar até essa pasta, os comandos abaixo irão compilar a solução e apresentar os resultados automáticamente.
+# Ao navegar até essa pasta, os comandos abaixo irão compilar a solução e apresentar os resultados automáticamente.
 
 mcs StoneChallenge.cs
 
-O comando acima irá gerar um arquivo .exe. Para rodar esse arquivo, basta digitar o comando abaixo, continuando após o comando acima:
+# O comando acima irá gerar um arquivo .exe. Para rodar esse arquivo, basta digitar o comando abaixo, continuando após o comando acima:
 
 mono StoneChallenge.exe
 
