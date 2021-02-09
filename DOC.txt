@@ -1,0 +1,37 @@
+Dev: ALEXANDRE RANGEL SEIDEL
+E-mail: arseidel2003@gmail.com
+
+## DESAFIO ##
+
+Imagine uma lista de compras. Ela possui:
+
+Itens
+Quantidade de cada item
+Preço por unidade/peso/pacote de cada item
+
+Desenvolva uma função (ou método) que irá receber uma lista de compras (como a detalhada acima) e uma lista de e-mails. Aqui, cada e-mail representa uma pessoa.
+
+A função deve:
+
+Calcular a soma dos valores, ou seja, multiplicar o preço de cada item por sua quantidade e somar todos os itens
+Dividir o valor de forma igual entre a quantidade de e-mails
+Retornar um mapa/dicionário onde a chave será o e-mail e o valor será quanto ele deve pagar nessa conta
+
+-----------------------------------------------------
+
+## SOLUÇÃO ##
+
+Criei uma classe de item, que possui os atributos NOME, PREÇO e QUANTIDADE. 
+Em seguida, instanciei uma lista com esse tipo e adicionei alguns itens por padrão.
+
+Fiz a mesma coisa com os e-mails, criando uma lista de string.
+
+O método "GetOrderValues" irá calcular o preço que cada um irá pagar, primeiramente sem contar as sobras. 
+Após essa divisão, é feito um cálculo para pegar o valor dessa sobra. Com essa sobra, iremos dividir da melhor forma possível
+entre todos os e-mails da lista para que uma pessoa não fique com toda essa sobra. 
+
+Nesse caso, criei um loop que a cada centavo de sobra, ele irá adicionar tanto o valor que a pessoa irá pagar MAIS 1 centavo,
+até essa sobra acabar. Caso a sobra acabe, ele irá apenas adicionar o valor da divisão por pessoa.
+
+Para terminar, essa lista é retornada a variavel result no main. Com essa variável, criei um loop que irá imprimir automaticamente
+cada chave e seu respectivo valor na linha de comando, caso essa variável não esteja vazia.
